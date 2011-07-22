@@ -102,6 +102,7 @@ $last_year = date("m/d/Y", $last_year);
 				<input type="radio" name="resultType" value="XML" id="XML" onclick="changeResultType(this.value)" /> <label for="XML">XML</label>&nbsp;
 				<input type="radio" name="resultType" value="CSV" id="CSV" onclick="changeResultType(this.value)" /> <label for="CSV">CSV</label>&nbsp;
 				<input type="radio" name="resultType" value="SQL" id="SQL" onclick="changeResultType(this.value)" /> <label for="SQL">SQL</label>
+                <input type="radio" name="resultType" value="JSON" id="JSON" onclick="changeResultType(this.value)" /> <label for="JSON">JSON</label>
 			</td>
 		</tr>
 		<tr>
