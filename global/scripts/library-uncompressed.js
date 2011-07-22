@@ -629,6 +629,7 @@ function changeResultType(resultType)
   switch (resultType)
   {
     case "HTML":
+    case "JSON":
     case "Excel":
       $("custom_col_name").innerHTML = "Column Title";
       $("sql_options").style.display = "none";
