@@ -10,4 +10,3 @@ Install
     Download and extract to some location inside your webserver root
     Import the SQL file _installdb_install.sql_ into a MySQL database
     Modify *library.php* file with your database connection details
-    
