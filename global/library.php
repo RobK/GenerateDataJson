@@ -44,11 +44,11 @@ $g_title = "generatedata.com";
 
 
 // MySQL database settings
-$g_table_prefix = "dg_"; // if you change this, be sure to update the SQL in /install/db_install.sql
-$g_db_hostname = ""; // probably "localhost"
-$g_db_name     = "";
-$g_db_username = "";
-$g_db_password = "";
+$g_table_prefix = 'dg_'; // if you change this, be sure to update the SQL in /install/db_install.sql
+$g_db_hostname = ''; // probably "localhost"
+$g_db_name     = '';
+$g_db_username = '';
+$g_db_password = '';
 
 
 /*------------------------------------------------------------------------------------------------*\
@@ -111,6 +111,9 @@ function get_firstnames($gender = "")
 
   if (!empty($gender))
     $where_clause = "WHERE gender='$gender'";
+
+  if (empty($where_clause))
+    $where_clause = '';
 
   // first name
   $query = mysql_query("
