@@ -45,7 +45,7 @@ CREATE TABLE `dg_cities` (
   `city_id` mediumint(8) unsigned NOT NULL auto_increment,
   `city` varchar(80) NOT NULL default '',
   PRIMARY KEY  (`city_id`)
-) TYPE=MyISAM AUTO_INCREMENT=1057 ;
+) ENGINE=MyISAM ;
 
 INSERT INTO `dg_cities` VALUES (1, 'Aberdeen');
 INSERT INTO `dg_cities` VALUES (2, 'Abilene');
@@ -423,7 +423,7 @@ INSERT INTO `dg_cities` VALUES (373, 'Greenfield');
 INSERT INTO `dg_cities` VALUES (374, 'Greensboro');
 INSERT INTO `dg_cities` VALUES (375, 'Greensburg');
 INSERT INTO `dg_cities` VALUES (376, 'Greenville');
-INSERT INTO `dg_cities` VALUES (377, 'Guánica');
+INSERT INTO `dg_cities` VALUES (377, 'Guï¿½nica');
 INSERT INTO `dg_cities` VALUES (378, 'Guayama');
 INSERT INTO `dg_cities` VALUES (379, 'Guayanilla');
 INSERT INTO `dg_cities` VALUES (380, 'Gulfport');
@@ -531,7 +531,7 @@ INSERT INTO `dg_cities` VALUES (481, 'Klamath Falls');
 INSERT INTO `dg_cities` VALUES (482, 'Knoxville');
 INSERT INTO `dg_cities` VALUES (483, 'Kokomo');
 INSERT INTO `dg_cities` VALUES (484, 'Kona');
-INSERT INTO `dg_cities` VALUES (485, 'La Cañada Flintridge');
+INSERT INTO `dg_cities` VALUES (485, 'La Caï¿½ada Flintridge');
 INSERT INTO `dg_cities` VALUES (486, 'La Crosse');
 INSERT INTO `dg_cities` VALUES (487, 'La Habra');
 INSERT INTO `dg_cities` VALUES (488, 'La Habra Heights');
@@ -616,7 +616,7 @@ INSERT INTO `dg_cities` VALUES (566, 'Marshall');
 INSERT INTO `dg_cities` VALUES (567, 'Marshfield');
 INSERT INTO `dg_cities` VALUES (568, 'Martinsburg');
 INSERT INTO `dg_cities` VALUES (569, 'Mason City');
-INSERT INTO `dg_cities` VALUES (570, 'Mayagüez');
+INSERT INTO `dg_cities` VALUES (570, 'Mayagï¿½ez');
 INSERT INTO `dg_cities` VALUES (571, 'Maywood');
 INSERT INTO `dg_cities` VALUES (572, 'McAlester');
 INSERT INTO `dg_cities` VALUES (573, 'McAllen');
@@ -1115,7 +1115,7 @@ CREATE TABLE `dg_counties` (
   `chapman_code` char(3) NOT NULL default '',
   `country` varchar(25) NOT NULL default '',
   PRIMARY KEY  (`county_id`)
-) TYPE=MyISAM AUTO_INCREMENT=158 ;
+) ENGINE=MyISAM ;
 
 INSERT INTO `dg_counties` VALUES (1, 'Aberdeenshire', 'ABD', 'Scotland');
 INSERT INTO `dg_counties` VALUES (2, 'Anglesey', 'AGY', 'Wales');
@@ -1284,7 +1284,7 @@ CREATE TABLE `dg_countries` (
   `id` mediumint(9) NOT NULL auto_increment,
   `country` varchar(100) NOT NULL default '',
   PRIMARY KEY  (`id`)
-) TYPE=MyISAM AUTO_INCREMENT=237 ;
+) ENGINE=MyISAM;
 
 INSERT INTO `dg_countries` VALUES (1, 'Afghanistan');
 INSERT INTO `dg_countries` VALUES (2, 'Albania');
@@ -1533,7 +1533,7 @@ CREATE TABLE `dg_first_names` (
   `first_name` varchar(50) NOT NULL default '',
   `gender` enum('male','female','both') NOT NULL default 'male',
   PRIMARY KEY  (`id`)
-) TYPE=MyISAM AUTO_INCREMENT=1173 ;
+) ENGINE=MyISAM;
 
 
 INSERT INTO `dg_first_names` VALUES (1, 'Aaron', 'male');
@@ -2719,7 +2719,7 @@ CREATE TABLE `dg_provinces` (
   `province` varchar(50) NOT NULL default '',
   `prov_short` char(2) default NULL,
   PRIMARY KEY  (`id`)
-) TYPE=MyISAM AUTO_INCREMENT=14 ;
+) ENGINE=MyISAM ;
 
 INSERT INTO `dg_provinces` VALUES (1, 'Alberta', 'AB');
 INSERT INTO `dg_provinces` VALUES (2, 'British Columbia', 'BC');
@@ -2745,7 +2745,7 @@ CREATE TABLE `dg_provinces_netherlands` (
   `province` varchar(50) NOT NULL default '',
   `prov_short` varchar(10) NOT NULL default '',
   PRIMARY KEY  (`province_id`)
-) TYPE=MyISAM AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM;
 
 INSERT INTO `dg_provinces_netherlands` VALUES (1, 'Drenthe', 'Dr.');
 INSERT INTO `dg_provinces_netherlands` VALUES (2, 'Flevoland', 'Fl.');
@@ -2770,7 +2770,7 @@ CREATE TABLE `dg_states` (
   `state` varchar(25) NOT NULL default '',
   `state_short` char(2) default NULL,
   PRIMARY KEY  (`id`)
-) TYPE=MyISAM AUTO_INCREMENT=52 ;
+) ENGINE=MyISAM;
 
 INSERT INTO `dg_states` VALUES (1, 'Alabama', 'AL');
 INSERT INTO `dg_states` VALUES (2, 'Alaska', 'AK');
@@ -2833,7 +2833,7 @@ CREATE TABLE `dg_surnames` (
   `id` mediumint(9) NOT NULL auto_increment,
   `surname` varchar(100) NOT NULL default '',
   PRIMARY KEY  (`id`)
-) TYPE=MyISAM AUTO_INCREMENT=3347 ;
+) ENGINE=MyISAM;
 
 INSERT INTO `dg_surnames` VALUES (1, 'Abbott');
 INSERT INTO `dg_surnames` VALUES (2, 'Acevedo');
