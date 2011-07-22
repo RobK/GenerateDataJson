@@ -71,6 +71,9 @@ switch ($g_resultType)
   case "CSV":
     require("csv.php");
     break;
+  case 'JSON':
+    require('json.php');
+    break;
   case "SQL":
     require("sql.php");
     break;    
