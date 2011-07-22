@@ -127,6 +127,7 @@ $translations = gd_get_translations();
               <input type="radio" name="resultType" value="XML" id="XML" /> <label for="XML">XML</label>&nbsp;
               <input type="radio" name="resultType" value="CSV" id="CSV" /> <label for="CSV">CSV</label>&nbsp;
               <input type="radio" name="resultType" value="SQL" id="SQL" /> <label for="SQL">SQL</label>
+              <input type="radio" name="resultType" value="JSON" id="JSON" /> <label for="JSON">JSON</label>
             </div>
             <div class="clear"></div>
           </div>

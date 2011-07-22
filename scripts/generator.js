@@ -161,6 +161,7 @@ var gd = {
     switch (resultType)
     {
       case "HTML":
+      case "JSON":
       case "Excel":
         $("#colTitle").html(L.column_title);
         gd.hideResultTypeIfOpen(["XML", "SQL", "CSV"]);
@@ -435,7 +436,7 @@ var gd = {
     }
 
     // all checks out. Set the form target and submit the sucker
-    if (resultType == "HTML" || resultType == "XML" || resultType == "SQL")
+    if (resultType == "HTML" || resultType == "JSON" || resultType == "XML" || resultType == "SQL")
       document.data.target = "_blank";
     else
       document.data.target = "hiddenIframe";

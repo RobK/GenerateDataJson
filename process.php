@@ -71,6 +71,9 @@ $g_template = gd_get_data_set_template($_POST, $g_numCols);
 
 switch ($g_resultType)
 {
+  case 'JSON':
+    require_once("export_types/json.php");
+    break;
   case "HTML":
     require_once("export_types/html.php");
     break;
@@ -85,6 +88,7 @@ switch ($g_resultType)
     break;
   case "SQL":
     require_once("export_types/sql.php");
-    break;}
+    break;
+}
 
 
