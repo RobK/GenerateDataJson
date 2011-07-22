@@ -1,6 +1,0 @@
-This is fork of the GenerateData project (http://www.generatedata.com). Based on 2.1 version.
-
-Changes
-    - It adds a new JSON output format.
-    - Fixed problems with base SQL
-
