@@ -16,11 +16,6 @@ ksort($g_template, SORT_NUMERIC);
 
 $output = array();
 
-function pr($in)
-{
-    echo '<pre>', print_r($in, true), '</pre>';
-}
-
 for ($row=1; $row<=$g_numResults; $row++)
 {
     //echo 'title: ', [$i]['title'], '<BR>';
@@ -50,8 +45,7 @@ for ($row=1; $row<=$g_numResults; $row++)
 
 }
 
-    pr($row_data);
-    echo json_encode($output);
+echo json_encode($output);
 ?>
 
 </body>
