@@ -8,6 +8,6 @@ Install instructions
 
 1. Clone or download project from my GitHub project page.
 2. Copy files to a web-server (Apache will do nicely!).
-3. Import the SQL file from the “install” directory into your MySQL database.
+3. Import the SQL file from the "install" directory into your MySQL database.
 4. Edit the global/library.php and update the MySQL database details
 5. Access in your browser
